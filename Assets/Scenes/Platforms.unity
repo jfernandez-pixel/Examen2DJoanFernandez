@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 405333883}
   - component: {fileID: 405333881}
   - component: {fileID: 405333885}
+  - component: {fileID: 405333886}
   m_Layer: 0
   m_Name: Star
   m_TagString: Items
@@ -736,12 +737,34 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.25
+--- !u!95 &405333886
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405333880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 46d8e4c1f9e2ef24ea0d1a528b130e90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &577194930
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,7 +6328,7 @@ Transform:
   m_GameObject: {fileID: 1563399772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.780998, y: 0.4000001, z: -10}
+  m_LocalPosition: {x: -5.781, y: 0.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6623,6 +6646,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1086655461636167638, guid: a04b40b43a9aa30408e0eb3c42c6a6aa, type: 3}
+      propertyPath: m_SortingOrder
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 3273877564316522517, guid: a04b40b43a9aa30408e0eb3c42c6a6aa, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.7909706
